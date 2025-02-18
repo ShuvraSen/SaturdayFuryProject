@@ -24,7 +24,9 @@ public class SetupDrivers {
 		options.addArguments("--start-maximized");			//add argument to maximize browser
 		options.addArguments("--disable-notifications");	//add argument to diable notifications
 //		options.addArguments("--headless");					//headless execution
-		driver = new ChromeDriver(options);					//initializing chrome driver
+		driver = new ChromeDriver(options);	
+		//initializing chrome driver
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://www.ebay.com/");				//loading the page
 	}
 	
@@ -36,5 +38,6 @@ public class SetupDrivers {
 		driver.close();										//closing current driver
 //		driver.quit();										//closing all driver
 	}
+	
 }
 

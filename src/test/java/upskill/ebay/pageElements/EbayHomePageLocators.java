@@ -15,8 +15,22 @@ public class EbayHomePageLocators {
 	
 	
 	//searchBtn
-	@FindBy(xpath="//span[text()='Search']")
+	@FindBy(xpath="//button[@value='Search']")
 	public WebElement btnSearch;
 	
+////select[contains(@aria-label,'Select a category for search')]
+	@FindBy(xpath="//select[contains(@aria-label,'category')]")
+	public WebElement ddCategory;
 	
+	//mousehover for myEbay
+	//span[contains(text(),'My eBay')]
+	@FindBy(xpath="//span[contains(text(),'My eBay')]")
+	public WebElement linkMyEbay;
+	
+	//a[contains(text(),'Summary')]---mouseHover for summer option
+	
+
+	//Summary
+	@FindBy(xpath="//a[contains(text(),'Summary')]")
+	public WebElement linkSummary;
 }
